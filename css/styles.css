@@ -7,39 +7,11 @@ background-color: Crimson;
 padding-top: 20px;
 }
 
-/* Rotate first bar */
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-  opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
-}
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-@media screen and (max-width: 600px) {
- h2.nav-list {
-    display: none;
   }
-  
-
-  }
-.menu {
-  display: inline-block;
-  cursor: pointer;
+.menu1 {
+  display: block;
+  cursor: auto;
+  text-align:right;
   
 }
 .section {
@@ -54,12 +26,12 @@ padding-top: 20px;
 
 .sec-title {
     position: relative;
-    float: right;
+    float: center;
     border: 3 px solid red;
     padding: 7.5px 40px;
     margin-bottom: 25px;
-    top: -1px;
-    right: -1px;
+    top: 1px;
+    right: 1px;
     font-size: 125%;
     color: whitesmoke;
 }
@@ -242,5 +214,39 @@ padding-top: 20px;
     .col-sm-12 {
         width: 100%;
     }
+	}
+}
+    /* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
 
-=
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+@media screen and (max-width: 2000px) {
+ div#menu1 {
+    display: none;
+  }
+
+@media screen and (max-width: 799px) {
+ div#menu1 {
+    display: block;
+    text-align: right;
+    margin:auto;
+  }
